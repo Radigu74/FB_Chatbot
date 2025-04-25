@@ -70,7 +70,7 @@ def send_message(recipient_id, message_text):
     Send a message back to the Facebook Messenger user.
     You must set up your Page Access Token from Facebook.
     """
-    PAGE_ACCESS_TOKEN = "your_page_access_token_here"
+    PAGE_ACCESS_TOKEN = "os.getenv("PAGE_ACCESS_TOKEN")"
     post_message_url = "https://graph.facebook.com/v12.0/me/messages?access_token=" + PAGE_ACCESS_TOKEN
     response_msg = {
         "recipient": {"id": recipient_id},
