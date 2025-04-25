@@ -3,6 +3,8 @@ import requests
 from dotenv import load_dotenv
 import os
 
+load_dotenv()  
+
 app = Flask(__name__)
 
 VERIFY_TOKEN       = os.getenv("VERIFY_TOKEN")
