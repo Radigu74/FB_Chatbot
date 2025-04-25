@@ -63,7 +63,7 @@ def forward_to_chatbot(message):
             return "Error contacting chatbot API."
     except Exception as e:
         print("Error forwarding to chatbot:", e)
-        return "Error processing your request."
+        return "Cannot process your request."
 
 def send_message(recipient_id, message_text):
     """
